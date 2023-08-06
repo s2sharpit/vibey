@@ -149,8 +149,8 @@ const HackathonDetails: NextPage<hackathontype> = ({
                 <h1 className="text-2xl font-bold md:text-4xl ">Rewards</h1>
                 <hr className="mt-4 block border-neutral-600 md:hidden"></hr>
                 <div className="relative mt-6 grid grid-cols-1 gap-3 text-lg sm:grid-cols-2 lg:grid-cols-3 ">
-                  {hackathon?.rewards?.title.trim().length > 0 &&
-                  hackathon?.rewards?.prize.trim().length > 0 ? (
+                  {hackathon?.rewards?.title?.trim()?.length > 0 &&
+                  hackathon?.rewards?.prize?.trim()?.length > 0 ? (
                     <div className="dark:bg-zinc-800 bg-neutral-100 py-4 px-3 w-full rounded-lg">
                       <div className="flex flex-col gap-6">
                         <div className="flex items-center gap-4">
